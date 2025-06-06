@@ -10,7 +10,7 @@
   Даже delay(1)!!!!!!!!!!!!
   Иначе РАБОТАТЬ НЕ БУДЕТ!!!!!!!!!!!!
   */
-  //Это пример для 4-х разрядного индикатора с общим катодом
+  //Это пример для 6-х разрядного индикатора с общим катодом
 
   #include "Dynamic_Indication_LED.h"
   // Определяем пины к которым подключёны сегменты индикатора (Слева - сегменты индикатора, справа - пины Arduino)
@@ -46,7 +46,7 @@ void setup()
   pinMode(E, OUTPUT);
   pinMode(F, OUTPUT);
   pinMode(G, OUTPUT);
-  pinMode(DP, OUTPUT);
+  //pinMode(DP, OUTPUT);
 
   pinMode(SEG1, OUTPUT);
   pinMode(SEG2, OUTPUT);

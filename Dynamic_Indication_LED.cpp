@@ -23,7 +23,7 @@
     this->SEG6 = pinSEG6;
 
     this->commonPIN = comPIN;
-    this->countSEG = (pinSEG3 == 0) ? ((pinSEG2 == 0) ? 2 : 4) : 6;
+    this->countSEG = 6;
 
     if (commonPIN == 1)
     {
@@ -41,14 +41,14 @@
   uint8_t pinSEG1, uint8_t pinSEG2, uint8_t pinSEG3, uint8_t pinSEG4, bool comPIN)
   : Indicator(pinA, pinB, pinC, pinD, pinE, pinF, pinG, pinDP, pinSEG1, pinSEG2, pinSEG3, pinSEG4, 0, 0, comPIN)
   {
-
+    this->countSEG = 4;
   }
 
   Indicator::Indicator(uint8_t pinA, uint8_t pinB, uint8_t pinC, uint8_t pinD, uint8_t pinE, uint8_t pinF, uint8_t pinG, uint8_t pinDP,
   uint8_t pinSEG1, uint8_t pinSEG2, bool comPIN)
   : Indicator(pinA, pinB, pinC, pinD, pinE, pinF, pinG, pinDP, pinSEG1, pinSEG2, 0, 0, 0, 0, comPIN)
   {
-
+    this->countSEG = 2;
   }
 
   //----------------------------------------------- 
